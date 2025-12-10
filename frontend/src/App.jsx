@@ -34,7 +34,11 @@ import Hearing from "./pages/trademark/Hearing";
 import UserDashboard from "./pages/User/Dashboard";
 import AgentDashboard from "./pages/Agent/Dashboard";
 import JournalDetails from "./pages/trademark/JournalDetails";
-
+import RenewalDetails from "./pages/trademark/RenewalDetails";
+import MonthlyJournal from "./pages/TradeMarkJournal/MonthlyJournal";
+import DateSetup from "./pages/Utility/DateSetup";
+import ChangePassword from "./pages/Utility/ChangePassword";
+import LogoSetup from "./pages/Utility/LogoSetup";
 
 function App() {
   return (
@@ -69,6 +73,13 @@ function App() {
             <Route path="tm-form-entries" element={<TMFormEntries />} />
             <Route path="hearings" element={<Hearing />} />
             <Route path="journal-details" element={<JournalDetails />} />
+            <Route path="renewal-details" element={<RenewalDetails />} />
+            <Route path="monthly-journal" element={<MonthlyJournal />} />
+            <Route path="date-format" element={<DateSetup />} />
+              <Route path="change-password" element={<ChangePassword />} />
+              <Route path="logo-setup" element={<LogoSetup />} />
+
+
 
             
 

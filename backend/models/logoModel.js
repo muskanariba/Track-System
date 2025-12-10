@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const logoSchema = new mongoose.Schema(
   {
-    logo: {
+     logoUrl: {
       data: Buffer,
       contentType: String
     }
