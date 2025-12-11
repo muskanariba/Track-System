@@ -29,8 +29,6 @@ import AgentListTM from "./pages/setups/AgentListTM";
 import ApplicationDetails from "./pages/trademark/ApplicationDetails";
 import TMFormEntries from "./pages/trademark/TMFormEntries";
 import Hearing from "./pages/trademark/Hearing";
-
-// User & Agent Dashboards
 import UserDashboard from "./pages/User/Dashboard";
 import AgentDashboard from "./pages/Agent/Dashboard";
 import JournalDetails from "./pages/trademark/JournalDetails";
@@ -39,6 +37,17 @@ import MonthlyJournal from "./pages/TradeMarkJournal/MonthlyJournal";
 import DateSetup from "./pages/Utility/DateSetup";
 import ChangePassword from "./pages/Utility/ChangePassword";
 import LogoSetup from "./pages/Utility/LogoSetup";
+import BasicSearchReport from "./pages/trademark/BasicSearchReport";
+import TMRenewalReport from "./pages/trademark/TMRenewalReport";
+import TMReminderReport from "./pages/trademark/TMReminderReport";
+import TMSingleQuery from "./pages/trademark/TMSingleQuery";
+import CompareJournal from "./pages/TradeMarkJournal/CompareJournal";
+import SearchManualJournal from "./pages/TradeMarkJournal/SearchManualJournal";
+
+
+// User & Agent Dashboards
+
+
 
 function App() {
   return (
@@ -76,8 +85,16 @@ function App() {
             <Route path="renewal-details" element={<RenewalDetails />} />
             <Route path="monthly-journal" element={<MonthlyJournal />} />
             <Route path="date-format" element={<DateSetup />} />
-              <Route path="change-password" element={<ChangePassword />} />
-              <Route path="logo-setup" element={<LogoSetup />} />
+            <Route path="change-password" element={<ChangePassword />} />
+            <Route path="logo-setup" element={<LogoSetup />} />
+            <Route path="basic-search" element={<BasicSearchReport />} />
+            <Route path="tm-renewal-report" element={<TMRenewalReport />} />
+            <Route path="tm-reminder-report" element={<TMReminderReport />} />
+            <Route path="tm-single-query" element={<TMSingleQuery />} />
+            <Route path="/admin/compare-journal" element={<CompareJournal />} />
+            <Route path="/admin/search-journal" element={<SearchManualJournal />} />
+
+
 
 
 
